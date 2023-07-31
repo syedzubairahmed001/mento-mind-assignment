@@ -48,8 +48,9 @@ const drop = function (event) {
     activeDiv.style.backgroundColor = tempColor;
     activeDiv.innerText = targetDiv.innerText;
     targetDiv.innerText = originalNumber;
+    targetDiv.style.opacity = "1";
   }
-  activeDiv.style.opacity = "1";
+  
   activeDiv = null;
   originalNumber = null;
 };
